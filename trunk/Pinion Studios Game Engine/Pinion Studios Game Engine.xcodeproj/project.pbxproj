@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCA5230A16EEFD500020E932 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCA5230916EEFD500020E932 /* main.cpp */; };
+		DCA5230C16EEFD500020E932 /* Pinion_Studios_Game_Engine.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCA5230B16EEFD500020E932 /* Pinion_Studios_Game_Engine.1 */; };
+		DCD6338E16EEFED40061E29B /* Archive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6335E16EEFED40061E29B /* Archive.cpp */; };
+		DCD6338F16EEFED40061E29B /* ArchiveFileHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6336016EEFED40061E29B /* ArchiveFileHeader.cpp */; };
+		DCD6339016EEFED40061E29B /* ArchiveHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6336216EEFED40061E29B /* ArchiveHeader.cpp */; };
+		DCD6339116EEFED40061E29B /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6336516EEFED40061E29B /* core.cpp */; };
+		DCD6339216EEFED40061E29B /* Creatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6336716EEFED40061E29B /* Creatures.cpp */; };
+		DCD6339316EEFED40061E29B /* Difficulty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6336916EEFED40061E29B /* Difficulty.cpp */; };
+		DCD6339416EEFED40061E29B /* Endian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6336B16EEFED40061E29B /* Endian.cpp */; };
+		DCD6339516EEFED40061E29B /* glut_obj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6336D16EEFED40061E29B /* glut_obj.cpp */; };
+		DCD6339616EEFED40061E29B /* HashItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6336E16EEFED40061E29B /* HashItem.cpp */; };
+		DCD6339716EEFED40061E29B /* HashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6337016EEFED40061E29B /* HashTable.cpp */; };
+		DCD6339816EEFED40061E29B /* FileInputStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6337316EEFED40061E29B /* FileInputStream.cpp */; };
+		DCD6339916EEFED40061E29B /* FileOutputStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6337516EEFED40061E29B /* FileOutputStream.cpp */; };
+		DCD6339A16EEFED40061E29B /* ModelOBJ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6337A16EEFED40061E29B /* ModelOBJ.cpp */; };
+		DCD6339B16EEFED40061E29B /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6338116EEFED40061E29B /* Event.cpp */; };
+		DCD6339C16EEFED40061E29B /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6338316EEFED40061E29B /* Object.cpp */; };
+		DCD6339D16EEFED40061E29B /* Acceleration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6338616EEFED40061E29B /* Acceleration.cpp */; };
+		DCD6339E16EEFED40061E29B /* Movement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6338816EEFED40061E29B /* Movement.cpp */; };
+		DCD6339F16EEFED40061E29B /* Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCD6338B16EEFED40061E29B /* Render.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCA5230416EEFD500020E932 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				DCA5230C16EEFD500020E932 /* Pinion_Studios_Game_Engine.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DCA5230616EEFD500020E932 /* Pinion Studios Game Engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Pinion Studios Game Engine"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA5230916EEFD500020E932 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DCA5230B16EEFD500020E932 /* Pinion_Studios_Game_Engine.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Pinion_Studios_Game_Engine.1; sourceTree = "<group>"; };
+		DCD6335E16EEFED40061E29B /* Archive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Archive.cpp; sourceTree = "<group>"; };
+		DCD6335F16EEFED40061E29B /* Archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Archive.h; sourceTree = "<group>"; };
+		DCD6336016EEFED40061E29B /* ArchiveFileHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchiveFileHeader.cpp; sourceTree = "<group>"; };
+		DCD6336116EEFED40061E29B /* ArchiveFileHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiveFileHeader.h; sourceTree = "<group>"; };
+		DCD6336216EEFED40061E29B /* ArchiveHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchiveHeader.cpp; sourceTree = "<group>"; };
+		DCD6336316EEFED40061E29B /* ArchiveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchiveHeader.h; sourceTree = "<group>"; };
+		DCD6336416EEFED40061E29B /* Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		DCD6336516EEFED40061E29B /* core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = core.cpp; sourceTree = "<group>"; };
+		DCD6336616EEFED40061E29B /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = "<group>"; };
+		DCD6336716EEFED40061E29B /* Creatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Creatures.cpp; sourceTree = "<group>"; };
+		DCD6336816EEFED40061E29B /* definedMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = definedMacro.h; sourceTree = "<group>"; };
+		DCD6336916EEFED40061E29B /* Difficulty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Difficulty.cpp; sourceTree = "<group>"; };
+		DCD6336A16EEFED40061E29B /* Difficulty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Difficulty.h; sourceTree = "<group>"; };
+		DCD6336B16EEFED40061E29B /* Endian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Endian.cpp; sourceTree = "<group>"; };
+		DCD6336C16EEFED40061E29B /* Endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endian.h; sourceTree = "<group>"; };
+		DCD6336D16EEFED40061E29B /* glut_obj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glut_obj.cpp; sourceTree = "<group>"; };
+		DCD6336E16EEFED40061E29B /* HashItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashItem.cpp; sourceTree = "<group>"; };
+		DCD6336F16EEFED40061E29B /* HashItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashItem.h; sourceTree = "<group>"; };
+		DCD6337016EEFED40061E29B /* HashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashTable.cpp; sourceTree = "<group>"; };
+		DCD6337116EEFED40061E29B /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
+		DCD6337316EEFED40061E29B /* FileInputStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileInputStream.cpp; sourceTree = "<group>"; };
+		DCD6337416EEFED40061E29B /* FileInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInputStream.h; sourceTree = "<group>"; };
+		DCD6337516EEFED40061E29B /* FileOutputStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileOutputStream.cpp; sourceTree = "<group>"; };
+		DCD6337616EEFED40061E29B /* FileOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileOutputStream.h; sourceTree = "<group>"; };
+		DCD6337716EEFED40061E29B /* FileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileStream.h; sourceTree = "<group>"; };
+		DCD6337816EEFED40061E29B /* ItemCreationAttr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCreationAttr.h; sourceTree = "<group>"; };
+		DCD6337A16EEFED40061E29B /* ModelOBJ.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelOBJ.cpp; sourceTree = "<group>"; };
+		DCD6337B16EEFED40061E29B /* ModelOBJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelOBJ.h; sourceTree = "<group>"; };
+		DCD6337C16EEFED40061E29B /* My Workstation.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "My Workstation.mtl"; sourceTree = "<group>"; };
+		DCD6337E16EEFED40061E29B /* Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Socket.h; sourceTree = "<group>"; };
+		DCD6338016EEFED40061E29B /* Beasts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beasts.h; sourceTree = "<group>"; };
+		DCD6338116EEFED40061E29B /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
+		DCD6338216EEFED40061E29B /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		DCD6338316EEFED40061E29B /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		DCD6338416EEFED40061E29B /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		DCD6338616EEFED40061E29B /* Acceleration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Acceleration.cpp; sourceTree = "<group>"; };
+		DCD6338716EEFED40061E29B /* Acceleration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acceleration.h; sourceTree = "<group>"; };
+		DCD6338816EEFED40061E29B /* Movement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Movement.cpp; sourceTree = "<group>"; };
+		DCD6338916EEFED40061E29B /* Movement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movement.h; sourceTree = "<group>"; };
+		DCD6338B16EEFED40061E29B /* Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Render.cpp; sourceTree = "<group>"; };
+		DCD6338C16EEFED40061E29B /* Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Render.h; sourceTree = "<group>"; };
+		DCD6338D16EEFED40061E29B /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCA5230316EEFD500020E932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCA522FD16EEFD500020E932 = {
+			isa = PBXGroup;
+			children = (
+				DCA5230816EEFD500020E932 /* Pinion Studios Game Engine */,
+				DCA5230716EEFD500020E932 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCA5230716EEFD500020E932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCA5230616EEFD500020E932 /* Pinion Studios Game Engine */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCA5230816EEFD500020E932 /* Pinion Studios Game Engine */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6335D16EEFED40061E29B /* Archive */,
+				DCD6336416EEFED40061E29B /* Audio.h */,
+				DCD6336516EEFED40061E29B /* core.cpp */,
+				DCD6336616EEFED40061E29B /* Creature.h */,
+				DCD6336716EEFED40061E29B /* Creatures.cpp */,
+				DCD6336816EEFED40061E29B /* definedMacro.h */,
+				DCD6336916EEFED40061E29B /* Difficulty.cpp */,
+				DCD6336A16EEFED40061E29B /* Difficulty.h */,
+				DCD6336B16EEFED40061E29B /* Endian.cpp */,
+				DCD6336C16EEFED40061E29B /* Endian.h */,
+				DCD6336D16EEFED40061E29B /* glut_obj.cpp */,
+				DCD6336E16EEFED40061E29B /* HashItem.cpp */,
+				DCD6336F16EEFED40061E29B /* HashItem.h */,
+				DCD6337016EEFED40061E29B /* HashTable.cpp */,
+				DCD6337116EEFED40061E29B /* HashTable.h */,
+				DCD6337216EEFED40061E29B /* IO */,
+				DCD6337816EEFED40061E29B /* ItemCreationAttr.h */,
+				DCD6337916EEFED40061E29B /* Loaders */,
+				DCD6337C16EEFED40061E29B /* My Workstation.mtl */,
+				DCD6337D16EEFED40061E29B /* Network */,
+				DCD6337F16EEFED40061E29B /* Objects */,
+				DCD6338516EEFED40061E29B /* Physics */,
+				DCD6338A16EEFED40061E29B /* Renderer */,
+				DCA5230916EEFD500020E932 /* main.cpp */,
+				DCA5230B16EEFD500020E932 /* Pinion_Studios_Game_Engine.1 */,
+			);
+			path = "Pinion Studios Game Engine";
+			sourceTree = "<group>";
+		};
+		DCD6335D16EEFED40061E29B /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6335E16EEFED40061E29B /* Archive.cpp */,
+				DCD6335F16EEFED40061E29B /* Archive.h */,
+				DCD6336016EEFED40061E29B /* ArchiveFileHeader.cpp */,
+				DCD6336116EEFED40061E29B /* ArchiveFileHeader.h */,
+				DCD6336216EEFED40061E29B /* ArchiveHeader.cpp */,
+				DCD6336316EEFED40061E29B /* ArchiveHeader.h */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
+		DCD6337216EEFED40061E29B /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6337316EEFED40061E29B /* FileInputStream.cpp */,
+				DCD6337416EEFED40061E29B /* FileInputStream.h */,
+				DCD6337516EEFED40061E29B /* FileOutputStream.cpp */,
+				DCD6337616EEFED40061E29B /* FileOutputStream.h */,
+				DCD6337716EEFED40061E29B /* FileStream.h */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		DCD6337916EEFED40061E29B /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6337A16EEFED40061E29B /* ModelOBJ.cpp */,
+				DCD6337B16EEFED40061E29B /* ModelOBJ.h */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		DCD6337D16EEFED40061E29B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6337E16EEFED40061E29B /* Socket.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DCD6337F16EEFED40061E29B /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6338016EEFED40061E29B /* Beasts.h */,
+				DCD6338116EEFED40061E29B /* Event.cpp */,
+				DCD6338216EEFED40061E29B /* Event.h */,
+				DCD6338316EEFED40061E29B /* Object.cpp */,
+				DCD6338416EEFED40061E29B /* Object.h */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		DCD6338516EEFED40061E29B /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6338616EEFED40061E29B /* Acceleration.cpp */,
+				DCD6338716EEFED40061E29B /* Acceleration.h */,
+				DCD6338816EEFED40061E29B /* Movement.cpp */,
+				DCD6338916EEFED40061E29B /* Movement.h */,
+			);
+			path = Physics;
+			sourceTree = "<group>";
+		};
+		DCD6338A16EEFED40061E29B /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6338B16EEFED40061E29B /* Render.cpp */,
+				DCD6338C16EEFED40061E29B /* Render.h */,
+				DCD6338D16EEFED40061E29B /* Vertex.h */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCA5230516EEFD500020E932 /* Pinion Studios Game Engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCA5230F16EEFD500020E932 /* Build configuration list for PBXNativeTarget "Pinion Studios Game Engine" */;
+			buildPhases = (
+				DCA5230216EEFD500020E932 /* Sources */,
+				DCA5230316EEFD500020E932 /* Frameworks */,
+				DCA5230416EEFD500020E932 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pinion Studios Game Engine";
+			productName = "Pinion Studios Game Engine";
+			productReference = DCA5230616EEFD500020E932 /* Pinion Studios Game Engine */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCA522FE16EEFD500020E932 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Aaron Goy";
+			};
+			buildConfigurationList = DCA5230116EEFD500020E932 /* Build configuration list for PBXProject "Pinion Studios Game Engine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCA522FD16EEFD500020E932;
+			productRefGroup = DCA5230716EEFD500020E932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCA5230516EEFD500020E932 /* Pinion Studios Game Engine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCA5230216EEFD500020E932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA5230A16EEFD500020E932 /* main.cpp in Sources */,
+				DCD6338E16EEFED40061E29B /* Archive.cpp in Sources */,
+				DCD6338F16EEFED40061E29B /* ArchiveFileHeader.cpp in Sources */,
+				DCD6339016EEFED40061E29B /* ArchiveHeader.cpp in Sources */,
+				DCD6339116EEFED40061E29B /* core.cpp in Sources */,
+				DCD6339216EEFED40061E29B /* Creatures.cpp in Sources */,
+				DCD6339316EEFED40061E29B /* Difficulty.cpp in Sources */,
+				DCD6339416EEFED40061E29B /* Endian.cpp in Sources */,
+				DCD6339516EEFED40061E29B /* glut_obj.cpp in Sources */,
+				DCD6339616EEFED40061E29B /* HashItem.cpp in Sources */,
+				DCD6339716EEFED40061E29B /* HashTable.cpp in Sources */,
+				DCD6339816EEFED40061E29B /* FileInputStream.cpp in Sources */,
+				DCD6339916EEFED40061E29B /* FileOutputStream.cpp in Sources */,
+				DCD6339A16EEFED40061E29B /* ModelOBJ.cpp in Sources */,
+				DCD6339B16EEFED40061E29B /* Event.cpp in Sources */,
+				DCD6339C16EEFED40061E29B /* Object.cpp in Sources */,
+				DCD6339D16EEFED40061E29B /* Acceleration.cpp in Sources */,
+				DCD6339E16EEFED40061E29B /* Movement.cpp in Sources */,
+				DCD6339F16EEFED40061E29B /* Render.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DCA5230D16EEFD500020E932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DCA5230E16EEFD500020E932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DCA5231016EEFD500020E932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCA5231116EEFD500020E932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCA5230116EEFD500020E932 /* Build configuration list for PBXProject "Pinion Studios Game Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA5230D16EEFD500020E932 /* Debug */,
+				DCA5230E16EEFD500020E932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCA5230F16EEFD500020E932 /* Build configuration list for PBXNativeTarget "Pinion Studios Game Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA5231016EEFD500020E932 /* Debug */,
+				DCA5231116EEFD500020E932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCA522FE16EEFD500020E932 /* Project object */;
+}
