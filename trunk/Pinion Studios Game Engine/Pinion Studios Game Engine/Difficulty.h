@@ -18,14 +18,14 @@ namespace PinionEngine
  */
     class Difficulty{
         public:
-        enum difficulty {
+        enum DiffEnum {
             BEGINNER = 1,
             NOVICE = 2,
             EXPERT = 3,
             IMPOSSIBLE = 4,
             GAME_PROGRAMMER =5,
         };
-        string get_enum_difficulty(enum difficulty);
+        string get_enum_difficulty(DiffEnum difficulty);
         void set_difficulty(int dif);
         int get_difficulty();
         string get_difficulty_string() const;
@@ -33,6 +33,10 @@ namespace PinionEngine
         int difficulty_level;
         string difficulty_str;
 
+    };
+    struct DifficultyStruct {
+        string diffDescription;
+        int diffInt;
     };
 };
 #endif

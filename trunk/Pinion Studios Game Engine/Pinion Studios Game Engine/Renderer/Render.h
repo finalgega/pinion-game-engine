@@ -8,7 +8,7 @@
 //  This class is a prototype and is prone to changes.
 #ifndef Game_Engine_Render_h
 #define Game_Engine_Render_h
-#include "common.h"
+#include "../common.h"
 #include "Vertex.h"
 
 using namespace std;

@@ -10,7 +10,7 @@
 #include "Archive.h"
 #include "ArchiveFileHeader.h"
 #include "ArchiveHeader.h"
-#include "Endian.h"
+#include "../Endian.h"
 Archive::Archive()
 {
     
@@ -24,6 +24,7 @@ bool Archive::readArchiveFile(char* fileName)
 {
     Endian endianSwap;
     ArchiveHeader archiveHeader;
+	return false;
 }
 bool writeArchiveFile(char* fileName,ArchiveFileHeader* headers,int totalHeaders);
 

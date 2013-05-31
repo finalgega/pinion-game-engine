@@ -8,7 +8,6 @@
 
 #include "Difficulty.h"
 #include "common.h"
-#include <string>
 using namespace std;
 using namespace PinionEngine;
 void Difficulty::set_difficulty(int dif)
@@ -49,11 +48,10 @@ string Difficulty::get_difficulty_string() const
 {
     return difficulty_str;
 }
-//string get_enum_difficulty(enum difficulty)
-//{
-//    enum d = difficulty;
+string get_enum_difficulty(int difficulty)
+{
 //    string str_difficulty;
-//    switch (d) {
+//    switch (difficulty) {
 //        case BEGINNER:
 //            str_difficulty = "Beginner";
 //            break;
@@ -74,7 +72,9 @@ string Difficulty::get_difficulty_string() const
 //            break;
 //    }
 //    return str_difficulty;
-//}
+	return "HELLO";
+}
+
 struct Difficulty {
     string diffDescription;
     int diffInt;

@@ -10,7 +10,11 @@
 #define Game_Engine_Beasts_h
 #include "Creature.h"
 class Beasts : Creature  {
-    int aggro;
+    long aggro;
+    long health;
+    long def;
+    long resource;
+    string name;
 public:
     <#member functions#>
 };

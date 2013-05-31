@@ -7,10 +7,7 @@
 //
 
 #include "ModelOBJ.h"
-#include <OpenGL/OpenGL.h>
-#include <OpenGL/glu.h>
-#include <OpenGL/gl.h>
-#include <GLUT/GLUT.h>
+#include "../common.h"
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
@@ -18,7 +15,7 @@
 #include <sstream>
 #include <vector>
 #include <cmath>
-#include "definedMacro.h"
+#include "../definitions.h"
 using namespace std;
 
 ModelOBJ::ModelOBJ()
@@ -33,7 +30,7 @@ float * ModelOBJ::calculateNormal(float *coord1, float *coord2, float *coord3)
     float va[3],vb[3],vr[3],val;
     va[0] = coord1[0] - coord2[0];
     va[1] = coord1[1] - coord2[1];
-    va[3] = coord1[2] - coord2[2];
+    va[2] = coord1[2] - coord2[2];
     
     vb[0] = coord1[0] - coord3[0];
     
@@ -75,6 +72,7 @@ int ModelOBJ::load(char *filename)
         
         while (! objFile.eof()) {
             getline(objFile, line, '\n');
+            cout << line << endl;
             if (line.c_str()[0] == 'v') {
                 line[0] = ' ';
                 sscanf(line.c_str(), "%f %f %f", &vertexBuffer[totalConnectedPoints],&vertexBuffer[totalConnectedPoints+1],&vertexBuffer[totalConnectedPoints+2]);
@@ -100,7 +98,48 @@ int ModelOBJ::load(char *filename)
                 /********************
                  *Calculate all normals, used for lighting purposes.
                  */
-            }
-        }
-    }
+                float coord1[3] = { faces_triangles[triangle_index], faces_triangles[triangle_index+1],faces_triangles[triangle_index+2]};
+				float coord2[3] = {faces_triangles[triangle_index+3],faces_triangles[triangle_index+4],faces_triangles[triangle_index+5]};
+				float coord3[3] = {faces_triangles[triangle_index+6],faces_triangles[triangle_index+7],faces_triangles[triangle_index+8]};
+				float *norm = this->calculateNormal( coord1, coord2, coord3 );
+                
+				tCounter = 0;
+				for (int i = 0; i < POINTS_PER_VERTEX; i++)
+				{
+					normals[normal_index + tCounter ] = norm[0];
+					normals[normal_index + tCounter +1] = norm[1];
+					normals[normal_index + tCounter +2] = norm[2];
+					tCounter += POINTS_PER_VERTEX;
+				}
+                
+				triangle_index += TOTAL_FLOATS_IN_TRIANGLE;
+				normal_index += TOTAL_FLOATS_IN_TRIANGLE;
+				totalConnectedTriangles += TOTAL_FLOATS_IN_TRIANGLE;
+			}
+		}
+		objFile.close();														// Close OBJ file
+	}
+	else
+	{
+		cout << "Unable to open file";
+	}
+	return 0;
+}
+
+void ModelOBJ::release()
+{
+	free(this->faces_triangles);
+	free(this->normals);
+	free(this->vertexBuffer);
+}
+
+void ModelOBJ::draw()
+{
+ 	glEnableClientState(GL_VERTEX_ARRAY);						// Enable vertex arrays
+ 	glEnableClientState(GL_NORMAL_ARRAY);						// Enable normal arrays
+	glVertexPointer(3,GL_FLOAT,	0,faces_triangles);				// Vertex Pointer to triangle array
+	glNormalPointer(GL_FLOAT, 0, normals);// Normal pointer to normal array
+    glDrawArrays(GL_TRIANGLE_FAN, 0, totalConnectedTriangles);		// Draw the triangles
+//	glDisableClientState(GL_VERTEX_ARRAY);						// Disable vertex arrays
+//	glDisableClientState(GL_NORMAL_ARRAY);						// Disable normal arrays
 }

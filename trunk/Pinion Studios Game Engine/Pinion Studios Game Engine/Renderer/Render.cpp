@@ -7,9 +7,7 @@
 //
 
 #include "Render.h"
-#include "common.h"
-#include <GLUT/GLUT.h>
-#include <fstream>
+#include "../common.h"
 using namespace std;
 
 Render::Render()
