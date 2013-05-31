@@ -10,6 +10,10 @@
 #define Game_Engine_definedMacro_h
 
 typedef char PS_NETWORK_SOCKET_STATUS;
+typedef struct PS_STRUCT;
+typedef unsigned long PSLONG;
+typedef unsigned int PSUINT;
+typedef int PSINT;
 #define POINTS_PER_VERTEX 3
 #define TOTAL_FLOATS_IN_TRIANGLE 9
 #define KEY_ESCAPE 27

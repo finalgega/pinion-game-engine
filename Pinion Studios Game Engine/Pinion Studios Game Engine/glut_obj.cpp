@@ -8,25 +8,22 @@
  * You can use Blender to triangulate
  *
  */
-
-#ifdef __WINDOWS__
-#include <windows.h>
-#elif __APPLE__ || (__MACOSX__)
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
-#include <string.h>
+#include <string>
+#include <sstream>
+#include <vector>
+#include <cmath>
+#include "definedMacro.h"
+#include "common.h"
+#ifdef __WINDOWS__
+#include <windows.h>
+#elif __APPLE__ || (__MACOSX__)
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
 #include <OpenGL/OpenGL.h>
 #include <GLUT/GLUT.h>
-#include <iostream>
-#include <sstream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <cmath>
-#include "definedMacro.h"
 #endif
  
 using namespace std;
@@ -220,11 +217,12 @@ void Model_OBJ::Draw()
 /***************************************************************************
  * Program code
  ***************************************************************************/
- 
+/* 
 Model_OBJ obj;
 float o_rotation;
 glutWindow win;
- 
+
+
 void display() 
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -278,8 +276,10 @@ void keyboard ( unsigned char key, int x, int y )
   switch ( key ) {
     case KEY_ESCAPE:        
       exit ( 0 );   
-      break;      
+      break;
+          case 'a':
+          cout << " 'a' has been pressed" << endl;
     default:      
       break;
   }
-}
+}*/

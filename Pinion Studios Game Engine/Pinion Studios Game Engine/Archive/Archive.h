@@ -19,14 +19,14 @@
 //  be accessed. 
 #ifndef Game_Engine_Archive_h
 #define Game_Engine_Archive_h
-#include "FileInputStream.h"
+#include "../IO/FileInputStream.h"
 #include "ArchiveFileHeader.h"
 class Archive {
     ArchiveFileHeader* m_headers;
     int m_totalHeaders;
     
     FileInputStream m_fileStream;
-    
+	
 public:
     Archive();
     virtual ~Archive();
@@ -48,6 +48,8 @@ public:
     int getTotalHeaders();
     
     bool isArchiveOpen();
+
+	void verifyArchiveIntegrity();
 
 
 };

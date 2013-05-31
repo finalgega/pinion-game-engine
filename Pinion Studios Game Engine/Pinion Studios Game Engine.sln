@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pinion Studios Game Engine", "Pinion Studios Game Engine\Pinion Studios Game Engine.vcxproj", "{1F60E4AC-344A-4ED5-928A-00637E700E70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{90FAD78B-89C8-4105-87C2-2FFC7EABCBF6}"
+	ProjectSection(SolutionItems) = preProject
+		Pinion Studios Game Engine\Renderer\Render.cpp = Pinion Studios Game Engine\Renderer\Render.cpp
+		Pinion Studios Game Engine\Renderer\Render.h = Pinion Studios Game Engine\Renderer\Render.h
+		Pinion Studios Game Engine\Renderer\Vertex.h = Pinion Studios Game Engine\Renderer\Vertex.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F60E4AC-344A-4ED5-928A-00637E700E70}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1F60E4AC-344A-4ED5-928A-00637E700E70}.Debug|Win32.Build.0 = Debug|Win32
+		{1F60E4AC-344A-4ED5-928A-00637E700E70}.Release|Win32.ActiveCfg = Release|Win32
+		{1F60E4AC-344A-4ED5-928A-00637E700E70}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
